@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>TRPG</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ladning_page.css">
+</head>
+<body>
+    <div class="container" id="mainbackground">
+            <div id="main-section">
+                <div class="light-sky"></div>
+                <div class="hello" data-aos="fade-up"><h1>반갑습니다!</h1></div>
+                <div class="scrollment" data-aos="fade-up" data-aos-delay="1500"><h1>스크롤을 내려 모험을 떠나세요!</h1></div>
+                <div class="downarrow" data-aos="zoom-out-up" data-aos-delay="2000" data-aos-duration="1500"><i class='bx bx-chevrons-down' id="downarr"></i></div>
+                <div class="backgroundimages">
+                    <img src="img/background-image/mountain1.png" alt="" id="mountain1" class="bg">
+                    <img src="img/background-image/forest1.png" alt="" id="forest1" class="bg">
+                    <img src="img/background-image/mountain2.png" alt="" id="mountain2" class="bg">
+                    <img src="img/background-image/person1.png" id="mountain3" class="bg">
+                    <img src="img/background-image/person2.png" alt="" id="mountain4" class="bg">
+                    <img src="img/background-image/flat1.png" id="flat1" class="bg">
+                    <img src="img/background-image/flat2.png"  alt="" id="flat2" class="bg">
+                    <img src="img/background-image/bird1.gif" alt="" id="bird1" >
+                    <img src="img/background-image/dragon1.gif" alt="" id="flight-dragon" >
+                    <img src="img/background-image/bat1.gif" alt="" id="bat1" >
+                </div>
+                <div class="midmsg midmsg1" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in"><h1>이 곳은 TRPG의 세계입니다!</h1></div>
+                <div class="midmsg midmsg2"  data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-out"><h1>소설 속 주인공이 되어보세요!</h1></div>
+                <div class="buttonwrap">
+                    <div id="loginbtn" class="enterbtn" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" data-aos-easing="ease-out"><p>모험떠나기!</p></div>
+                </div>
+            </div>
+
+        <!-- login section ------------------------------------------------------------------------------------------ -->
+            <div class="logincontainer hide" id="loginbox" >
+                <div class="loginmainbox" >
+                    <i class='bx bx-exit'></i>
+                    <div class="loginformwrap">
+                        <h1>로그인</h1>
+                        <div class="loginwraps">
+                            <form action="" method="post">
+                                <input type="text" id="id" placeholder="아이디를 입력하세요." required />
+                                <input type="password" id="password" placeholder="비밀번호를 입력하세요." required />
+                                <input type="submit" value="로그인하기" class="dologinbtn"/>
+                            </form>
+                            <div class="logintextwrap">
+                                <a href="#">계정이 기억이 안나요</a>
+                                <p href="#" id="gosignup">회원가입</p>
+                            </div>
+                        </div>
+                        <div class="loginforother">
+                            <div class="logindiscord">
+                                <a href="">LOGIN WITH DISCORD</a><i class='bx bxl-discord-alt'></i>
+                            </div>
+                            <div class="logingoogle"><a href="">LOGIN WITH GOOGLE</a><i class='bx bxl-google' ></i></div>
+                        </div>
+                        <a href="" class="loginislater"><h1>먼저 둘러볼래요!</h1></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sign in section ------------------------------------------------------------------------------ -->
+            <div class="signup-container signuphide" id="signupcontainer">
+                <div class="signupbox">
+                    <i class='bx bx-exit signupexit'></i>
+                    <span>회원가입</span>
+                    <div class="signupwrap">
+                            <div class="idwrap">
+                                <input type="text" id="signupid" placeholder="아이디를 입력하세요." required />
+                                <p>아이디는 영문 소문자, 대문자, 숫자를 사용하여 <br>6~24자 까지 가능합니다.</p>
+                            </div>
+                            <div class="emailwrap">
+                                <input type="email" id="signupeamil" placeholder="이메일을 입력하세요." required />
+                                <button>인증번호 발송</button>
+                                <p>인증이 가능한 메일을 작성한 후 <br>수신받은 메일의 인증번호를 기입해주세요.</p>
+                            </div>
+                            <input type="text" id="signupemailcheck" placeholder="인증번호를 입력하세요 (이메일입력시 보이게)" required />
+                            <div class="passwordwrap">
+                                <input type="password" id="signuppassword" placeholder="비밀번호를 입력하세요." required />
+                                <p>비밀번호는 영문 소문자, 대문자, 숫자만 <br>사용가능합니다.</p>
+                            </div>
+                            <input type="password" id="signuppasswordcheck" placeholder="비밀번호를 다시 입력하세요." required />
+                            <div class="signuprule">
+                                <input type="checkbox" id="rules" required />
+                                <p>이용약관을 확인하였습니다.</p>
+                            </div>
+                            <input type="submit" value="가입하기" />
+                        <div class="signuplinkwrap">
+                            <a href="#" id="gologin">이미 계정이 있으신가요?</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="js/landing_page.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
